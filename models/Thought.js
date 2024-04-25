@@ -2,19 +2,14 @@ const { Schema, model } = require('mongoose');
 
 const thoughtShema = new Schema(
     {
-        published: {
-            type: Boolean,
-            default: false,
+        thoughtText: {
         },
         createdAt: {
-            type: Date,
-            default: Date.now,
         },
-        text: {
-            type: String,
-            minLength: 1,
-            maxLength: 500,
+        userName: {
         },
+        reactions: {
+        }
     },
     {
         toJSON: {
